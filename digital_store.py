@@ -10,7 +10,8 @@ customer_name = input("What is your name? ")
 
 # Product information
 product = input("What book would you like to buy? ")
-price = float(input("What is the price? "))
+price_text = input("What is the price? ")
+price = float(price_text.replace("$", "").strip())
 quantity = int(input("How many would you like? "))
 
 # Calculations
